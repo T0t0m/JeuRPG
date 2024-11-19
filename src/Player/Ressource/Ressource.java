@@ -73,16 +73,28 @@ public class Ressource {
 
     // Exemple d'utilisation de la classe Ressource
     public static void main(String[] args) {
-        // Création d'une instance de Ressource de type "Mana" avec une valeur maximale de 100
-        Ressource mana = new Ressource("Mana", 100);
-        System.out.println(mana); // Affiche l'état initial
+        // Utilisation des ressources définies dans la classe TypesRessource
+        Ressource mana = TypesRessource.MANA;
+        Ressource rage = TypesRessource.RAGE;
+        Ressource endurance = TypesRessource.ENDURANCE;
 
-        // Consommation de 20 unités de mana
+        // Affichage des ressources initiales
+        System.out.println("État initial des ressources:");
+        System.out.println(mana);
+        System.out.println(rage);
+        System.out.println(endurance);
+
+        // Consommation et régénération d'exemples
         mana.consommer(20);
-        System.out.println("Après consommation : " + mana);
+        System.out.println("\nAprès consommation de 20 unités de Mana:");
+        System.out.println(mana);
 
-        // Régénération de 10 unités de mana
-        mana.regenerer(10);
-        System.out.println("Après régénération : " + mana);
+        rage.regenerer(10);
+        System.out.println("\nAprès régénération de 10 unités de Rage:");
+        System.out.println(rage);
+
+        endurance.consommer(30);
+        System.out.println("\nAprès consommation de 30 unités d'Endurance:");
+        System.out.println(endurance);
     }
 }
