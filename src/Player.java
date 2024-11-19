@@ -3,6 +3,7 @@ public class Player {
     private String Prenom;
     private int vie;
     private int niveau;
+    private int xpPlayer;
 
     public Player() {}
     public Player(String nom, String prenom, int vie, int niveau) {
@@ -10,6 +11,7 @@ public class Player {
         Prenom = prenom;
         this.vie = vie;
         this.niveau = niveau;
+        this.xpPlayer = 0;
     }
 
     public String getNom() {
@@ -42,6 +44,14 @@ public class Player {
 
     public void setNiveau(int niveau) {
         this.niveau = niveau;
+    }
+
+    public int getXpPlayer() {
+        return xpPlayer;
+    }
+
+    public void setXpPlayer(int xpPlayer) {
+        this.xpPlayer = xpPlayer;
     }
 
     @Override
