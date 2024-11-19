@@ -8,6 +8,7 @@ public class Player {
     private String Prenom;    // Le prénom du joueur
     private int vie;          // La vie actuelle du joueur (points de vie)
     private int niveau;       // Le niveau du joueur dans le jeu
+    private int xpPlayer;     // Les points d'expérience du joueur (xp)
 
     // Constructeur par défaut, nécessaire si on souhaite créer un joueur sans initialiser les attributs tout de suite
     public Player() {}
@@ -18,6 +19,7 @@ public class Player {
         Prenom = prenom;     // Initialisation du prénom
         this.vie = vie;      // Initialisation de la vie
         this.niveau = niveau; // Initialisation du niveau
+        this.xpPlayer = 0;   // Initialisation des points d'expérience à 0 par défaut
     }
 
     // Getter pour obtenir le nom du joueur
@@ -60,14 +62,25 @@ public class Player {
         this.niveau = niveau;
     }
 
+    // Getter pour obtenir les points d'expérience du joueur
+    public int getXpPlayer() {
+        return xpPlayer;
+    }
+
+    // Setter pour modifier les points d'expérience du joueur
+    public void setXpPlayer(int xpPlayer) {
+        this.xpPlayer = xpPlayer;
+    }
+
     // Méthode toString pour afficher les informations du joueur de manière lisible
     @Override
     public String toString() {
         return "Player{" +
-                "Nom='" + Nom + '\'' +
-                ", Prenom='" + Prenom + '\'' +
-                ", vie=" + vie +
-                ", niveau=" + niveau +
+                "Nom='" + Nom + '\'' +            // Affiche le nom du joueur
+                ", Prenom='" + Prenom + '\'' +    // Affiche le prénom du joueur
+                ", vie=" + vie +                  // Affiche les points de vie du joueur
+                ", niveau=" + niveau +            // Affiche le niveau du joueur
+                ", xpPlayer=" + xpPlayer +        // Affiche les points d'expérience du joueur
                 '}';
     }
 }
