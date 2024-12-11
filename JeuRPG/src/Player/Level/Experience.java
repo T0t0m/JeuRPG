@@ -6,7 +6,7 @@ public class Experience {
 
     // Attribut pour stocker l'objet Player associé à l'expérience
     Player player;
-
+    
     // Attribut pour stocker le niveau requis pour passer au niveau suivant
     private int level = 300;
 

@@ -6,12 +6,12 @@ public class Level extends Experience {
 
     // Attribut pour stocker l'objet Player associé au niveau
     private Object player;
-
+    
     // Constructeur de la classe Level qui prend un objet Player en paramètre
     public Level(Player player) {
         super(player); // Appel du constructeur de la classe parent (Experience)
     }
-
+    
     // Méthode pour gérer l'augmentation du niveau du joueur
     public void NiveauPlayer() {
         // Vérifie si le joueur a atteint le seuil pour passer au niveau suivant
@@ -24,7 +24,7 @@ public class Level extends Experience {
             System.out.println("Le joueur n'a pas assez d'xp");
         }
     }
-
+            
     // Méthode privée pour vérifier si le joueur peut passer au niveau suivant
     private boolean NiveauSuivant(Object player2) {
         // Indication que cette méthode n'a pas encore été implémentée

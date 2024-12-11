@@ -3,10 +3,10 @@ package Player.Ressource;
 public class Ressource {
     // Champ pour le type de la ressource (e.g., "Mana", "Rage")
     private String type;
-
+    
     // Quantité actuelle de la ressource
     private int valeurActuelle;
-
+    
     // Quantité maximale que la ressource peut atteindre
     private int valeurMaximale;
 
