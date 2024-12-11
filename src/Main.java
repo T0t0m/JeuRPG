@@ -49,8 +49,9 @@ public class Main {
             if (villeActuelle != null) {
                 System.out.println("\nVous êtes en ville : " + villeActuelle.getNomCity());
                 System.out.println("1. Changer de ville");
-                System.out.println("2. Sortir de la ville");
-                System.out.println("3. Quitter le jeu");
+                System.out.println("2. Afficher la description de la ville");
+                System.out.println("3. Sortir de la ville");
+                System.out.println("4. Quitter le jeu");
             } else if (lieuActuel != null) {
                 System.out.println("\nVous êtes dans le lieu : " + lieuActuel.getNomOutside());
                 System.out.println("1. Retourner en ville");
@@ -85,6 +86,9 @@ public class Main {
                         }
                         break;
                     case 2:
+                        cityManager.afficherDescriptionVille();
+                        break;
+                    case 3:
                         outsideManager.afficherLieux();
                         System.out.print("Entrez le nom du lieu : ");
                         scanner.nextLine();
@@ -97,7 +101,7 @@ public class Main {
                             System.out.println("Lieu introuvable !");
                         }
                         break;
-                    case 3:
+                    case 4:
                         jeuEnCours = false;
                         break;
                     default:

@@ -2,11 +2,11 @@ package Map.City;
 
 public class Eldoria extends CityBase {
     public Eldoria() {
-        super("Eldoria");
+        super("Eldoria","");
     }
 
     @Override
     public void afficherBienvenue() {
-        System.out.println("Bienvenue à Eldoria, la cité magique des anciens !");
+        System.out.println("Bienvenue à Eldoria, La cité magique des anciens !");
     }
 }

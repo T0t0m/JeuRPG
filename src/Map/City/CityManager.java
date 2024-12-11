@@ -14,7 +14,20 @@ public class CityManager {
     private void initialiserVilles() {
         // Ajouter des villes
         cities.add(new Begynnelse());
+        cities.add(new Valendor());
+        cities.add(new Thaldrin());
+        cities.add(new Ravengard());
         cities.add(new Eldoria());
+        cities.add(new Araneth());
+        cities.add(new Faeloria());
+        cities.add(new Solara());
+        cities.add(new Mystralis());
+        cities.add(new Arithar());
+        cities.add(new Drakmaris());
+        cities.add(new Zephyria());
+        cities.add(new Luminara());
+        cities.add(new Vesperith());
+        cities.add(new Umbraeth());
     }
 
     // Obtenir la ville de départ
@@ -30,6 +43,16 @@ public class CityManager {
             }
         }
         return null; // Ville non trouvée
+    }
+
+    // Afficher la description d'une ville
+    public void afficherDescriptionVille(String descriptionVille) {
+        for (CityBase city : cities) {
+            if (city.getDescriptionCity().equalsIgnoreCase(descriptionVille)) {
+                return city;
+            }
+        }
+        return null;
     }
 
     // Afficher toutes les villes
