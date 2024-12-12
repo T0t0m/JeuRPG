@@ -47,12 +47,7 @@ public class CityManager {
 
     // Afficher la description d'une ville
     public void afficherDescriptionVille(String descriptionVille) {
-        for (CityBase city : cities) {
-            if (city.getDescriptionCity().equalsIgnoreCase(descriptionVille)) {
-                return city;
-            }
-        }
-        return null;
+        System.out.println(descriptionVille);
     }
 
     // Afficher toutes les villes

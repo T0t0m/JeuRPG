@@ -14,7 +14,7 @@ public abstract class CityBase {
     }
 
     public String getDescriptionCity() {
-        return description;
+        return this.description;
     }
 
     public abstract void afficherBienvenue(); // Méthode spécifique à chaque ville

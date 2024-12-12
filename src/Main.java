@@ -86,7 +86,7 @@ public class Main {
                         }
                         break;
                     case 2:
-                        cityManager.afficherDescriptionVille();
+                        cityManager.afficherDescriptionVille(villeActuelle.getDescriptionCity());
                         break;
                     case 3:
                         outsideManager.afficherLieux();
